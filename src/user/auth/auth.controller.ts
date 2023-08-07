@@ -40,7 +40,7 @@ export class AuthController {
 
   @Post('/signin')
   signin(@Body() body: SigninDto) {
-    this.authService.signin(body);
+    return this.authService.signin(body);
   }
 
   @Post('/key')
